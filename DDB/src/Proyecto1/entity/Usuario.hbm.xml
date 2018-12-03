@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2/12/2018 04:37:47 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Proyecto1.entity.Usuario" table="usuario" catalog="proyecto1" optimistic-lock="version">
+        <id name="idUsuario" type="int">
+            <column name="idUsuario" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="25" />
+        </property>
+        <property name="apPaterno" type="string">
+            <column name="apPaterno" length="25" />
+        </property>
+        <property name="apMaterno" type="string">
+            <column name="apMaterno" length="25" />
+        </property>
+        <property name="fechaContratacion" type="string">
+            <column name="FechaContratacion" length="25" />
+        </property>
+        <property name="salario" type="java.lang.Double">
+            <column name="Salario" precision="22" scale="0" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="15" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="Direccion" length="60" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="Telefono" length="10" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="Tipo" length="10" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="45" />
+        </property>
+        <set name="ventas" table="venta" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="idUsuario" />
+            </key>
+            <one-to-many class="Proyecto1.entity.Venta" />
+        </set>
+    </class>
+</hibernate-mapping>

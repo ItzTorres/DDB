@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2/12/2018 04:37:47 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Proyecto1.entity.Venta" table="venta" catalog="proyecto1" optimistic-lock="version">
+        <id name="idVenta" type="int">
+            <column name="idVenta" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="usuario" class="Proyecto1.entity.Usuario" fetch="select">
+            <column name="idUsuario" />
+        </many-to-one>
+        <property name="montoVenta" type="java.lang.Double">
+            <column name="MontoVenta" precision="22" scale="0" />
+        </property>
+        <property name="tipoPago" type="string">
+            <column name="TipoPago" length="20" />
+        </property>
+        <property name="fechaVenta" type="string">
+            <column name="FechaVenta" length="20" />
+        </property>
+        <set name="ventaproductos" table="ventaproducto" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="idVenta" not-null="true" />
+            </key>
+            <one-to-many class="Proyecto1.entity.Ventaproducto" />
+        </set>
+    </class>
+</hibernate-mapping>
