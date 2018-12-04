@@ -16,6 +16,7 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -27,48 +28,96 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        btnCerrar = new javax.swing.JButton();
+        btnMin = new javax.swing.JButton();
+        CmbCatalogo = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        ListServicio = new javax.swing.JList<>();
+        BtnContrato = new javax.swing.JButton();
+        JFondo = new javax.swing.JLabel();
+
+        jMenu3.setText("File");
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        setUndecorated(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 210, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 446, Short.MAX_VALUE)
-        );
+        btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Salir.png"))); // NOI18N
+        btnCerrar.setAutoscrolls(true);
+        btnCerrar.setBorder(null);
+        btnCerrar.setBorderPainted(false);
+        btnCerrar.setContentAreaFilled(false);
+        btnCerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCerrar.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Salir3.png"))); // NOI18N
+        btnCerrar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Salir2.png"))); // NOI18N
+        btnCerrar.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnCerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, -1, -1));
 
-        jMenu1.setText("File");
-        jMenuBar1.add(jMenu1);
+        btnMin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Minimizar.png"))); // NOI18N
+        btnMin.setAutoscrolls(true);
+        btnMin.setBorder(null);
+        btnMin.setBorderPainted(false);
+        btnMin.setContentAreaFilled(false);
+        btnMin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMin.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnMin.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Minimizar3.png"))); // NOI18N
+        btnMin.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Minimizar2.png"))); // NOI18N
+        btnMin.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnMin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMinActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnMin, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, -1, -1));
 
-        jMenu2.setText("Edit");
-        jMenuBar1.add(jMenu2);
+        CmbCatalogo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        CmbCatalogo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Público", "Tarea doméstica", "Profesional", "Mi Imagen", "Mantenimiento", "Académico", " " }));
+        getContentPane().add(CmbCatalogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 290, -1));
 
-        setJMenuBar(jMenuBar1);
+        jScrollPane1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 524, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        ListServicio.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(ListServicio);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 300, 80));
+
+        BtnContrato.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        BtnContrato.setText("Generar Contrato");
+        getContentPane().add(BtnContrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, 300, -1));
+
+        JFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoNegro2.jpg"))); // NOI18N
+        getContentPane().add(JFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 480));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnMinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinActionPerformed
+        // TODO add your handling code here:
+        this.setExtendedState(1);
+    }//GEN-LAST:event_btnMinActionPerformed
+
+    private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnCerrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -106,9 +155,15 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton BtnContrato;
+    private javax.swing.JComboBox<String> CmbCatalogo;
+    private javax.swing.JLabel JFondo;
+    private javax.swing.JList<String> ListServicio;
+    private javax.swing.JButton btnCerrar;
+    private javax.swing.JButton btnMin;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
