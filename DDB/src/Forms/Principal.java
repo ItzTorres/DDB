@@ -31,6 +31,7 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
+        btnCerrarSesion = new javax.swing.JButton();
         btnCerrar = new javax.swing.JButton();
         btnMin = new javax.swing.JButton();
         CmbCatalogo = new javax.swing.JComboBox<>();
@@ -49,6 +50,23 @@ public class Principal extends javax.swing.JFrame {
         setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnCerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/CerrarSesion.png"))); // NOI18N
+        btnCerrarSesion.setAutoscrolls(true);
+        btnCerrarSesion.setBorder(null);
+        btnCerrarSesion.setBorderPainted(false);
+        btnCerrarSesion.setContentAreaFilled(false);
+        btnCerrarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCerrarSesion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCerrarSesion.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/CerrarSesion3.png"))); // NOI18N
+        btnCerrarSesion.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/CerrarSesion2.png"))); // NOI18N
+        btnCerrarSesion.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        btnCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCerrarSesionActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Salir.png"))); // NOI18N
         btnCerrar.setAutoscrolls(true);
@@ -86,7 +104,7 @@ public class Principal extends javax.swing.JFrame {
 
         CmbCatalogo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         CmbCatalogo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Público", "Tarea doméstica", "Profesional", "Mi Imagen", "Mantenimiento", "Académico", " " }));
-        getContentPane().add(CmbCatalogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 290, -1));
+        getContentPane().add(CmbCatalogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 300, -1));
 
         jScrollPane1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
@@ -97,11 +115,11 @@ public class Principal extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(ListServicio);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 300, 80));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 300, 80));
 
         BtnContrato.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BtnContrato.setText("Generar Contrato");
-        getContentPane().add(BtnContrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, 300, -1));
+        getContentPane().add(BtnContrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 300, -1));
 
         JFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoNegro2.jpg"))); // NOI18N
         getContentPane().add(JFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 480));
@@ -118,6 +136,12 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed
+        // TODO add your handling code here:
+        new InicioSesion().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnCerrarSesionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,6 +184,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel JFondo;
     private javax.swing.JList<String> ListServicio;
     private javax.swing.JButton btnCerrar;
+    private javax.swing.JButton btnCerrarSesion;
     private javax.swing.JButton btnMin;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;

@@ -9,7 +9,7 @@ import java.sql.DriverManager;
  */
 public class Conexion {
     public static Connection conn;
-    private static final String driver = "com.mysql.jdbc.Driver";
+    private static final String driver = "com.mysql.cj.jdbc.Driver";
     private String user = "rootremoto";
     private String password = "root";
     private String bd = "";

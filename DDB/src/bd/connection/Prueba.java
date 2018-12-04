@@ -9,17 +9,17 @@ public class Prueba {
 
     public static void main(String[] args) {
         Conexion con = null;
-        con = new Conexion("10.100.73.88", "3306", "proyecto1");
+        con = new Conexion("192.168.0.6", "3306", "renter");
         Connection conect = con.getConn();
         try {
-            PreparedStatement ps = conect.prepareStatement("delete from usuario where idusuario = 666");
+            PreparedStatement ps = conect.prepareStatement("select * from servicio where idServicio = 1");
             ps.execute();
-            /*
+            
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                System.out.println("idUsuario = " + rs.getString("idUsuario") + "\tNombre = " + rs.getString("nombre") + "\n");
+                System.out.println("idServicio = " + rs.getString("idServicio") + "\tNombre = " + rs.getString("Nombre") + "\n");
             }
-            */
+            
             
         } catch (SQLException ex) {
             System.out.println("Error en la consulta");
