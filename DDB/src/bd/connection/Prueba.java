@@ -9,18 +9,22 @@ public class Prueba {
 
     public static void main(String[] args) {
         Conexion con = null;
-        con = new Conexion("192.168.0.6", "3306", "renter");
+        con = new Conexion("localhost", "3306", "mydb");
         Connection conect = con.getConn();
+        String consulta = "SELECT s.* from servicio s, catalogo_servicios c "
+                        + "where s.Catalogo_Servicios_idCS = c.idCS and c.Nombre like \"P├║blico\"";
+        System.out.println(consulta);
         try {
-            PreparedStatement ps = conect.prepareStatement("select * from servicio where idServicio = 1");
-            ps.execute();
-            
+            String[] lista = new String[1];
+            PreparedStatement ps = conect.prepareStatement(consulta);
             ResultSet rs = ps.executeQuery();
+            //System.out.println(rs.getString(2));
+            /*
             while (rs.next()) {
-                System.out.println("idServicio = " + rs.getString("idServicio") + "\tNombre = " + rs.getString("Nombre") + "\n");
+                lista[0] = rs.getString(2);
+                modeloLista.addElement(lista[0]);
             }
-            
-            
+            */
         } catch (SQLException ex) {
             System.out.println("Error en la consulta");
         }

@@ -55,9 +55,6 @@
           <Image iconType="3" name="/Imagenes/CerrarSesion.png"/>
         </Property>
         <Property name="autoscrolls" type="boolean" value="true"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="null"/>
-        </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -87,9 +84,6 @@
           <Image iconType="3" name="/Imagenes/Salir.png"/>
         </Property>
         <Property name="autoscrolls" type="boolean" value="true"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="null"/>
-        </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -119,9 +113,6 @@
           <Image iconType="3" name="/Imagenes/Minimizar.png"/>
         </Property>
         <Property name="autoscrolls" type="boolean" value="true"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="null"/>
-        </Property>
         <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -151,17 +142,12 @@
           <Font name="Tahoma" size="18" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="7">
-            <StringItem index="0" value="P&#xfa;blico"/>
-            <StringItem index="1" value="Tarea dom&#xe9;stica"/>
-            <StringItem index="2" value="Profesional"/>
-            <StringItem index="3" value="Mi Imagen"/>
-            <StringItem index="4" value="Mantenimiento"/>
-            <StringItem index="5" value="Acad&#xe9;mico"/>
-            <StringItem index="6" value=" "/>
-          </StringArray>
+          <StringArray count="0"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CmbCatalogoActionPerformed"/>
+      </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
