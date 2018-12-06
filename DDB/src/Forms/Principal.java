@@ -28,9 +28,11 @@ public class Principal extends javax.swing.JFrame {
     Conexion conect = null;
     Connection con = null;
     DefaultListModel modeloLista = new DefaultListModel();
+   
 
     public Principal() {
         initComponents();
+         
         this.setLocationRelativeTo(null);
         conect = new Conexion("localhost", "3306", "mydb");
         con = conect.getConn();
@@ -43,6 +45,7 @@ public class Principal extends javax.swing.JFrame {
                 llenarLista_servicio();
             }
         });
+        
     }
 
     /**
@@ -150,7 +153,8 @@ public class Principal extends javax.swing.JFrame {
         BtnContrato.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         BtnContrato.setText("Generar Contrato");
         getContentPane().add(BtnContrato, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 300, -1));
-
+        
+        
         JFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/FondoNegro2.jpg"))); // NOI18N
         getContentPane().add(JFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 480));
 
@@ -187,6 +191,14 @@ public class Principal extends javax.swing.JFrame {
         } catch (SQLException ex) {
             System.out.println("Error en la consulta");
         }
+    }
+    
+    private void BtnContratoActionPerformed(java.awt.event.ActionEvent evt){
+        Contrato abrir = new Contrato();
+        Contrato.txtservicio.setText((String)CmbCatalogo.getSelectedItem());
+        abrir.setVisible(true);
+        this.setVisible(false);
+        dispose();
     }
 
     private void btnMinActionPerformed(java.awt.event.ActionEvent evt) {
