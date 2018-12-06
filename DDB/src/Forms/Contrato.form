@@ -23,16 +23,19 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblTitleOwner" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblTitleRenter" min="-2" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="lblRenter" max="32767" attributes="0"/>
-                                  <Component id="jLabel1" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblApm" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblOwner" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
+<<<<<<< HEAD
                               <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                               <Component id="txtservicio" min="-2" pref="205" max="-2" attributes="0"/>
                           </Group>
@@ -41,48 +44,85 @@
                                   <Group type="102" attributes="0">
                                       <Component id="lblApm" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
+=======
+                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="txtName" min="-2" pref="317" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+>>>>>>> 9922223aaaa5350a68555cdb1e742d7113c16944
                                       <Component id="txtApm" min="-2" pref="192" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="RbtnMas" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblApp" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblfecha" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtRenter" min="-2" pref="199" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="lblTitleOwner" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lblApp" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblHora" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txtRenterApp" min="-2" pref="182" max="-2" attributes="0"/>
-                                  <Component id="txtHora" min="-2" pref="98" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="txtRenter1" min="-2" pref="207" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="lblfecha" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jDateChooser1" min="-2" pref="191" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtRenterApp" min="-2" pref="200" max="-2" attributes="0"/>
+                          <Component id="Rbtnfem" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="52" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="lblApmOwner" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txtApm1" min="-2" pref="207" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="lblAppOwner" min="-2" pref="116" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btnNext" max="32767" attributes="0"/>
+                          <Component id="txtAppOwner" pref="182" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="lblTitleRenter" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblOwner" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                               <Component id="txtName" min="-2" pref="317" max="-2" attributes="0"/>
+=======
+                              <Component id="lblEdad" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                              <Component id="txtApm2" min="-2" pref="59" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                              <Component id="lblCel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="txtApm3" min="-2" pref="129" max="-2" attributes="0"/>
+>>>>>>> 9922223aaaa5350a68555cdb1e742d7113c16944
                           </Group>
+                          <Component id="lblRenter1" alignment="0" min="-2" pref="70" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="261" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jComboBox1" min="-2" pref="207" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
-              </Group>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="202" max="-2" attributes="0"/>
-                  <Component id="txtRenter1" pref="202" max="32767" attributes="0"/>
-                  <EmptySpace min="-2" pref="278" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -90,9 +130,9 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-              <Component id="lblTitleRenter" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="lblTitleRenter" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblOwner" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtName" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
@@ -107,15 +147,16 @@
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblfecha" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lblHora" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtHora" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtRenter" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="RbtnMas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Rbtnfem" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
               <Component id="lblTitleOwner" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
+<<<<<<< HEAD
               <Component id="lblRenter" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -131,7 +172,34 @@
                   <EmptySpace pref="260" max="32767" attributes="0"/>
                   <Component id="txtRenter1" min="-2" pref="26" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="208" max="-2" attributes="0"/>
+=======
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblRenter1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtRenter1" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace pref="8" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblApmOwner" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtApm1" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  <Component id="lblAppOwner" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtAppOwner" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+>>>>>>> 9922223aaaa5350a68555cdb1e742d7113c16944
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblEdad" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtApm2" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                  <Component id="lblCel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtApm3" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" max="32767" attributes="0"/>
+                  <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+              <Component id="btnNext" min="-2" pref="36" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -145,17 +213,15 @@
         <Property name="text" type="java.lang.String" value="Nombre "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblRenter">
+    <Component class="javax.swing.JLabel" name="lblAppOwner">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Nombre y Apellidos"/>
+        <Property name="text" type="java.lang.String" value="Apellido Paterno"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtName">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtRenter">
     </Component>
     <Component class="javax.swing.JLabel" name="lblfecha">
       <Properties>
@@ -170,7 +236,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="18" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Renter"/>
+        <Property name="text" type="java.lang.String" value="Proporcion&#xe9; los siguientes datos para registrarlo al Sistema de Servicios"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblTitleOwner">
@@ -178,7 +244,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="18" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Owner"/>
+        <Property name="text" type="java.lang.String" value="Datos de la persona a ofrecer el Servicio"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblApp">
@@ -201,6 +267,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtApm">
     </Component>
+<<<<<<< HEAD
     <Component class="javax.swing.JLabel" name="lblHora">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -210,6 +277,18 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtHora">
+=======
+    <Component class="javax.swing.JComboBox" name="jComboBox1">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+>>>>>>> 9922223aaaa5350a68555cdb1e742d7113c16944
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
@@ -221,8 +300,11 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtRenter1">
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="btnNext">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Siguiente"/>
       </Properties>
       <Events>
@@ -233,6 +315,64 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblRenter1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Nombre"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblApmOwner">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Apellido Materno"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtApm1">
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAppOwner">
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="RbtnMas">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Masculino"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbtnMasActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="Rbtnfem">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Femenino"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RbtnfemActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblEdad">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Edad"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtApm2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cel"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtApm3">
     </Component>
   </SubComponents>
 </Form>
