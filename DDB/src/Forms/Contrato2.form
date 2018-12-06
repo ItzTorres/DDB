@@ -180,8 +180,14 @@
     <Component class="javax.swing.JTextField" name="fecha">
     </Component>
     <Component class="javax.swing.JTextField" name="hora">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="horaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="servicio">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>

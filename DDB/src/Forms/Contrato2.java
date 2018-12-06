@@ -1,6 +1,8 @@
 
 package Forms;
 
+import java.util.Calendar;
+
 /**
  *
  * @author itzel
@@ -14,6 +16,15 @@ public class Contrato2 extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.servicio.setEnabled(false);
+        Calendar cal = Calendar.getInstance();
+        String fecha, hora;
+        fecha = cal.get(Calendar.DATE)+"/"+cal.get(Calendar.MONTH)+"/"+cal.get(Calendar.YEAR);
+        hora  = cal.get(Calendar.HOUR_OF_DAY)+":"+cal.get(Calendar.MINUTE)+":"+cal.get(Calendar.SECOND);
+        this.fecha.setEnabled(false);
+        this.hora.setEnabled(false);
+        this.fecha.setText(fecha);
+        this.hora.setText(hora);
+        
     }
 
     /**
@@ -67,6 +78,12 @@ public class Contrato2 extends javax.swing.JFrame {
         Aceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AceptarActionPerformed(evt);
+            }
+        });
+
+        hora.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                horaActionPerformed(evt);
             }
         });
 
@@ -145,6 +162,10 @@ public class Contrato2 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_AceptarActionPerformed
 
+    private void horaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_horaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_horaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -194,6 +215,6 @@ public class Contrato2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField servicio;
+    public static javax.swing.JTextField servicio;
     // End of variables declaration//GEN-END:variables
 }
