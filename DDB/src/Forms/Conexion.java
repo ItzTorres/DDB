@@ -54,6 +54,7 @@ public Connection getConexionMYSQL() {
                 String nick_o = rs.getString("Nick_O");
                 String nick_p = rs.getString("Persona_Nick_U");
 
+                
                 System.out.println(nick_o + " corresponde " + nick_p);
             }
 
