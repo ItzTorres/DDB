@@ -16,6 +16,7 @@ public class Contrato extends javax.swing.JFrame {
     DefaultListModel modeloLista = new DefaultListModel();
     bd.connection.Conexion conectServicio= null;
     bd.connection.Conexion conectVenta = null;
+    String IDUsuario_Venta = null;
     
     
     public Contrato() {

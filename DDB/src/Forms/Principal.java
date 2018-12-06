@@ -28,6 +28,7 @@ public class Principal extends javax.swing.JFrame {
     Conexion conect = null;
     Connection con = null;
     DefaultListModel modeloLista = new DefaultListModel();
+    String IDUsuario = null;
 
     public Principal() {
         initComponents();

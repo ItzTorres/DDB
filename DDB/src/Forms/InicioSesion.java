@@ -133,13 +133,18 @@ public class InicioSesion extends javax.swing.JFrame {
     }//GEN-LAST:event_TextUsuarioActionPerformed
 
     private void BtnAccesarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAccesarActionPerformed
-        // TODO add your handling code here:
+        
         String q = "from Usuario as u where u.idUsuario = " + TextUsuario.getText();
+        
         Usuario u = executeHQLQuery(q);
         if(u != null){
             if (u.getPassword().equals(String.valueOf(PasswordField.getPassword()))) {
                 if (u.getTipo().equals("1")) {
-                    new Principal().setVisible(true);
+                    Principal p = new Principal();
+                    p.IDUsuario = TextUsuario.getText();
+                    p.setLocationRelativeTo(null);
+                    p.setResizable(false);
+                    p.setVisible(true);
                     this.setVisible(false);
                 }
                 else
